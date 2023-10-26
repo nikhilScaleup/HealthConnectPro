@@ -69,7 +69,7 @@
             <tr>
                 <td  colspan="3">
                     <p class="sub-text2">With HealthConnectPro Patient Portal, your path to Wellness just got simpler. 
-                        <br>We manage your wellness in one convenient place, make your appointment now testing <br>
+                        <br>We manage your wellness in one convenient place, make your appointment now testing now <br>
                     </p>
                 </td>
             </tr>
