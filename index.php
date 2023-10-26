@@ -42,7 +42,7 @@
             <tr>
                 <td  colspan="3">
                     <p class="sub-text2">How is health today, Sounds like not good!<br>Don't worry. Find your doctor online Book as you wish with HealthConnectPro. <br>
-                   Book your appointment now testing jenkins</p>
+                   Book your appointment now testing jenkin</p>
                 </td>
             </tr>
             <tr>
