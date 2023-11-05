@@ -98,6 +98,15 @@
 	  <table>
             <tr>
                 <td>
+				      <?php
+					      if(isset($_GET["x"]))
+						  {
+					     ?>
+ <p class="sub-text" style="color:#F77D24">Thanks for signing up. Your account created successfully.</p>
+												
+						<?php
+						  }
+				       ?>
                     <p class="sub-text" style="color:#F77D24">Login</p>
                 </td>
             </tr>
@@ -141,7 +150,7 @@
                 <td>
                     <br>
                     <label for="" class="sub-text" style="font-weight: 280;">Don't have an account&#63; </label>
-                    <a href="#" class="hover-link1 non-style-link" style="color:#F77D24">Sign Up</a>
+                    <a href="signup.php" class="hover-link1 non-style-link" style="color:#F77D24">Sign Up</a>
                     <br><br><br>
                 </td>
             </tr>

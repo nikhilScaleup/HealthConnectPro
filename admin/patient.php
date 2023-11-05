@@ -209,12 +209,7 @@
                                 Name
                                 
                                 </th>
-                                <th class="table-headin" style="font-size:14px">
-                                    
-                                
-                                    NIC
-                                    
-                                </th>
+                               
                                 <th class="table-headin" style="font-size:14px">
                                 
                             
@@ -229,6 +224,19 @@
                                     Date of Birth
                                     
                                 </th>
+								 <th class="table-headin" style="font-size:14px">
+                                    
+                                
+                                   Policy Company
+                                    
+                                </th>
+								 <th class="table-headin" style="font-size:14px">
+                                    
+                                
+                                   Policy Number
+                                    
+                                </th>
+								
                                 <th class="table-headin" style="font-size:14px">
                                     
                                     Events
@@ -266,6 +274,7 @@
                                     $name=$row["pname"];
                                     $email=$row["pemail"];
                                     $nic=$row["pnic"];
+									$company=$row["pinsurancecompany"];
                                     $dob=$row["pdob"];
                                     $tel=$row["ptel"];
                                     
@@ -273,9 +282,7 @@
                                         <td style="text-align:center;font-size:12px;"> &nbsp;'.
                                         substr($name,0,35)
                                         .'</td>
-                                        <td style="text-align:center;font-size:12px;">
-                                        '.substr($nic,0,12).'
-                                        </td>
+                                       
                                         <td style="text-align:center;font-size:12px;">
                                             '.substr($tel,0,10).'
                                         </td>
@@ -284,6 +291,13 @@
                                          </td>
                                         <td style="text-align:center;font-size:12px;">
                                         '.substr($dob,0,10).'
+                                        </td>
+										 <td style="text-align:center;font-size:12px;">
+                                        '.substr($company,0,50).'
+                                        </td>
+                                        
+										 <td style="text-align:center;font-size:12px;">
+                                        '.substr($nic,0,12).'
                                         </td>
                                         <td style="text-align:center;font-size:12px;">
                                         <div style="display:flex;justify-content: center;">
@@ -323,9 +337,14 @@
             $name=$row["pname"];
             $email=$row["pemail"];
             $nic=$row["pnic"];
+				$company=$row["pinsurancecompany"];
             $dob=$row["pdob"];
             $tele=$row["ptel"];
             $address=$row["paddress"];
+			$city=$row["pcity"];
+			$state=$row["pstate"];
+			$zipcode=$row["pzipcode"];
+			
             echo '
             <div id="popup1" class="overlay">
                     <div class="popup">
@@ -344,29 +363,40 @@
                             </tr>
                             <tr>
                                 
-                                <td class="label-td" colspan="2">
+                                <td class="label-td">
                                     <label for="name" class="form-label">Patient ID: </label>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2" style="font-size:12px">
-                                    P-'.$id.'<br><br>
-                                </td>
-                                
-                            </tr>
-                            
-                            <tr>
-                                
-                                <td class="label-td" colspan="2">
+								 
+                                <td class="label-td">
                                     <label for="name" class="form-label">Name: </label>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="label-td" colspan="2" style="font-size:12px">
+                                <td class="label-td" style="font-size:12px">
+                                    P-'.$id.'<br><br>
+                                </td>
+                                <td class="label-td" style="font-size:12px">
                                     '.$name.'<br><br>
                                 </td>
-                                
                             </tr>
+                             <tr>
+							 <td class="label-td">
+                                    <label for="nic" class="form-label">Policy Company: </label>
+                                </td>
+                                <td class="label-td">
+                                    <label for="nic" class="form-label">Policy Number: </label>
+                                </td>
+                            </tr>
+                            <tr>
+							
+                                <td class="label-td" style="font-size:12px">
+                                '.$company.'<br><br>
+                                </td>
+                                <td class="label-td" style="font-size:12px">
+                                '.$nic.'<br><br>
+                                </td>
+                            </tr>
+                           
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="Email" class="form-label">Email: </label>
@@ -377,16 +407,7 @@
                                 '.$email.'<br><br>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">NIC: </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2" style="font-size:12px">
-                                '.$nic.'<br><br>
-                                </td>
-                            </tr>
+                           
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="Tele" class="form-label">Telephone: </label>
@@ -405,7 +426,7 @@
                             </tr>
                             <tr>
                             <td class="label-td" colspan="2" style="font-size:12px">
-                            '.$address.'<br><br>
+                            '.$address.','.$city.','.$state.'<br><br>
                             </td>
                             </tr>
                             <tr>

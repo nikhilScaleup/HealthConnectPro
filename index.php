@@ -29,20 +29,20 @@
                    <a href="login.php"   class="non-style-link"><p class="login-btn btn-primary btn" style="text-align:center">LOGIN</p></a>
                 </td>
                 <td  width="10%">
-                    <a href="#" class="non-style-link"><p class="login-btn btn-primary btn" style="padding-right: 10px;text-align: center">REGISTER</p></a>
+                    <a href="signup.php" class="non-style-link"><p class="login-btn btn-primary btn" style="padding-right: 10px;text-align: center">REGISTER</p></a>
                 </td>
             </tr>
             
             <tr>
                 <td  colspan="3">
-                    <p class="heading-text">Good Health Is The Root Of All Happiness.</p>
+                    <p class="heading-text">Good Health Is The Root Of All Heppiness.</p>
 
                 </td>
             </tr>
             <tr>
                 <td  colspan="3">
                     <p class="sub-text2">How is health today, Sounds like not good!<br>Don't worry. Find your doctor online Book as you wish with HealthConnectPro. <br>
-                   Book your appointment</p>
+                   Book your appointment now.</p>
                 </td>
             </tr>
             <tr>

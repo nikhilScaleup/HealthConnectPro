@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2023 at 11:48 AM
+-- Generation Time: Nov 05, 2023 at 06:35 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.31
 
@@ -97,15 +97,19 @@ CREATE TABLE `patient` (
   `paddress` varchar(255) DEFAULT NULL,
   `pnic` varchar(15) DEFAULT NULL,
   `pdob` date DEFAULT NULL,
-  `ptel` varchar(15) DEFAULT NULL
+  `ptel` varchar(15) DEFAULT NULL,
+  `pcity` varchar(30) DEFAULT NULL,
+  `pstate` varchar(30) DEFAULT NULL,
+  `pzipcode` varchar(10) DEFAULT NULL,
+  `pinsurancecompany` varchar(50) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `patient`
 --
 
-INSERT INTO `patient` (`pid`, `pemail`, `pname`, `ppassword`, `paddress`, `pnic`, `pdob`, `ptel`) VALUES
-(4, 'nikhil@gmail.com', 'Mr Nikhil', 'nikhil', 'Test', '10001', '2000-10-24', '0512604968');
+INSERT INTO `patient` (`pid`, `pemail`, `pname`, `ppassword`, `paddress`, `pnic`, `pdob`, `ptel`, `pcity`, `pstate`, `pzipcode`, `pinsurancecompany`) VALUES
+(4, 'nikhil@gmail.com', 'Mr Nikhil', 'nikhil', 'Test', '10001', '2000-10-24', '0512604968', '', '', '', 'Test');
 
 -- --------------------------------------------------------
 
@@ -292,7 +296,7 @@ ALTER TABLE `doctor`
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `schedule`
