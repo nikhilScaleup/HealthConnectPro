@@ -64,7 +64,7 @@ if($_POST){
             <tr>
                 <td colspan="2">
 				
-                    <p class="header-text">Let's Get Started the test case</p>
+                    <p class="header-text">Let's Get Started testing jenkins</p>
 					
                     <p class="sub-text">Add Your Personal Details to Continue</p>
                 </td>
