@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2023 at 06:35 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.2.31
+-- Generation Time: Nov 15, 2023 at 05:30 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `admin` (
   `aemail` varchar(255) NOT NULL,
   `apassword` varchar(255) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `admin`
@@ -51,7 +51,7 @@ CREATE TABLE `appointment` (
   `apponum` int(3) DEFAULT NULL,
   `scheduleid` int(10) DEFAULT NULL,
   `appodate` date DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `appointment`
@@ -74,7 +74,7 @@ CREATE TABLE `doctor` (
   `docnic` varchar(15) DEFAULT NULL,
   `doctel` varchar(15) DEFAULT NULL,
   `specialties` int(2) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `doctor`
@@ -102,7 +102,7 @@ CREATE TABLE `patient` (
   `pstate` varchar(30) DEFAULT NULL,
   `pzipcode` varchar(10) DEFAULT NULL,
   `pinsurancecompany` varchar(50) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `patient`
@@ -124,7 +124,7 @@ CREATE TABLE `schedule` (
   `scheduledate` date DEFAULT NULL,
   `scheduletime` time DEFAULT NULL,
   `nop` int(4) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `schedule`
@@ -142,7 +142,7 @@ INSERT INTO `schedule` (`scheduleid`, `docid`, `title`, `scheduledate`, `schedul
 CREATE TABLE `specialties` (
   `id` int(2) NOT NULL,
   `sname` varchar(50) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `specialties`
@@ -215,7 +215,7 @@ INSERT INTO `specialties` (`id`, `sname`) VALUES
 CREATE TABLE `webuser` (
   `email` varchar(255) NOT NULL,
   `usertype` char(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `webuser`

@@ -64,7 +64,9 @@ if($_POST){
             <tr>
                 <td colspan="2">
 				
-                    <p class="header-text">Patient Sign Up</p>
+                    <p class="header-text">Let's Get Started</p>
+					
+                    <p class="sub-text">Add Your Personal Details to Continue</p>
                 </td>
             </tr>
             <tr>
