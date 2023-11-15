@@ -51,7 +51,7 @@
         <table border="0">
             <tr>
                 <td width="80%">
-                    <font class="hcp-logo">HealthConnectPro </font>
+                    <font class="hcp-logo">HealthConnectPro. | The Path to wellness </font>
                  
                 </td>
                 <td width="10%">
@@ -66,14 +66,14 @@
             
             <tr>
                 <td  colspan="3">
-                    <p class="heading-text">Good Health Is The Root Of All Heppiness.</p>
+                    <p class="heading-text">Your Portal to a Healthy Life !</p>
 
                 </td>
             </tr>
             <tr>
                 <td  colspan="3">
-                    <p class="sub-text2">How is health today, Sounds like not good!<br>Don't worry. Find your doctor online Book as you wish with HealthConnectPro. <br>
-                   Book your appointment now.</p>
+                    <p class="sub-text2">With the HealthConnectPro Patient Portal, your path to wellness just got simpler.<br>We manage your wellness in one convenient place, make your appointment now. <br>
+</p>
                 </td>
             </tr>
             <tr>
@@ -92,7 +92,7 @@
         <div class="footer">
             <div class="footer-content">
                 <div class="footer-left">
-                    Its Empty Without here, Advertise here !
+                    Its Empty Without you, Advertise here !
                 </div>
                 <div class="footer-right">
                     A Web Solution by CS691 Patient Portal Project Team Fall.
