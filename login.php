@@ -64,6 +64,22 @@
                 }
 
             }
+			else if($utype=='d'){
+                //TODO
+                $checker = $database->query("select * from doctor where docemail='$email' and docpassword='$password'");
+                if ($checker->num_rows==1){
+
+
+                    //   doctor dashbord
+                    $_SESSION['user']=$email;
+                    $_SESSION['usertype']='d';
+                    header('location: doctor/index.php');
+
+                }else{
+                    $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Wrong credentials: Invalid email or password</label>';
+                }
+
+            }
            else if($utype=='a'){
                 //TODO
                 $checker = $database->query("select * from admin where aemail='$email' and apassword='$password'");
