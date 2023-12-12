@@ -140,7 +140,7 @@
 						<?php
 						  }
 				       ?>
-                    <p class="sub-text" style="color:#F77D24">Login demo test</p>
+                    <p class="sub-text" style="color:#F77D24">Login</p>
                 </td>
             </tr>
             <tr>
