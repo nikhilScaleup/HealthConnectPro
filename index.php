@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/index.css">
     <title>HealthConnectPro</title>
+    
     <style>
         table{
             animation: transitionIn-Y-bottom 0.5s;
